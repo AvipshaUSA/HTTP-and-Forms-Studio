@@ -1,19 +1,87 @@
 <!doctype html>
 
 <head>
+	<title>my search Engine</title>
+	<link rel="stylesheet" type = "text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
 	<meta charset="utf-8">
 	<script>
-		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
+		//todo
+		function setSearchEngine(){
+			//alert("alert")
+let actions = {
+"google" : "https://www.google.com/search",
+"duckDuckGo" : "https://duckduckgo.com/",
+"bing" : "https://www.bing.com/search",
+"ask": "https://www.ask.com/web"
+};
+let selectedEngine =document.querySelector("input[name=engine]:checked")
+let searchForm =document.querySelector("input[name=q]")
+let form = document.getElementById("searchForm")
+if(searchForm.value==="" || selectedEngine === null){
+		 alert("cant empty")
+		 event.preventDefault();
+		 }
+		
+	
+		let action = actions[selectedEngine.value]
+		form.setAttribute("action", action )
+		}
+		 window.addEventListener('load', function(){
+			 //todo
+			 let form =document.getElementById("searchForm")
+			 selectedEngine =document.querySelector("input[name=engine]:checked")
+			 form =document.addEventListener("submit", setSearchEngine)
+			 
+		
+
+		 });
 	</script>
 </head>
 
 <body>
+	<header>
+		<div>
+		<h1 >I am your new search engine</h1>
+		<h1>ASK ME!</h1>
+	    </div>
+	</header>
+	
+<div class ="bodyClass">
 
-	<form id="searchForm">
-    <!-- TODO: add form elements -->
+	<form id="searchForm" method = "GET"  >
+	<h3><input type = "text" name ="q"></h3>
+
+<label class ="labelClass">
+ <input type ="radio" name ="engine" value = "google"  >Google
+ <span class="checkmark"></span>
+</label>
+
+<label class ="labelClass" >
+ <input type ="radio" name ="engine" value = "duckDuckGo">DuckDuckGo
+ <span class="checkmark"></span>
+</label>
+
+<label class = "labelClass">
+ <input type ="radio" name ="engine" value = "bing">Bing
+ <span class="checkmark"></span>
+</label>
+
+<label  class = "labelClass">
+ <input type ="radio" name ="engine" value = "ask">Ask
+ <span class="checkmark"></span>
+</label>
+
+	<p><input type="submit" value="GO!"></p>
+	<!-- TODO: add form elements -->
+</div>
+
 	</form>
 
+	<footer>
+		<p>&copy; 2020 avipshaM.</p>
+	</footer>
+
 </body>
+

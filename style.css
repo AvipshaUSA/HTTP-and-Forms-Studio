@@ -1,0 +1,93 @@
+
+ 
+
+
+header {
+    height: 230px;
+    padding: 20px 0 70px 0;
+    background: url(img1.jpg ) ;
+    background-size: cover;
+    text-align: center;
+}
+h1 {
+    font-family: 'satisfy', cursive;
+
+}
+h3{
+    color: green;
+    font: 1.5rem cursive;
+    
+}
+
+#searchForm{
+margin-top : 10%;
+margin-left: 35%;
+margin-right:30%;
+font-size: 25px;
+color:blue;
+
+}
+
+.bodyClass{
+    border: 5px solid lightcoral;
+    padding-bottom:20%;
+    background-image: url(images2.jfif);
+    background-size: cover;
+}
+footer{
+    padding-top:20px;
+    height: 230px;
+    background: url(img1.jpg ) ; 
+    background-size: cover;
+    text-align: center;
+}
+p{
+    padding-top:15px;
+    font-family: 'satisfy', cursive; 
+    font-size: 35px;
+}
+
+/*
+input[type=radio]:checked ~ .labelClass::before{
+    background: #0DFF92;
+  }
+  
+  input[type=radio]:checked ~ label{
+    color: #0DFF92;
+  }*/
+
+  label {
+    font: 1.5rem cursive;
+  
+    
+
+}
+input[type='text']{
+    width: 50%;
+    height: 50%;
+ border: 2px solid rgb(83, 148, 83);
+ background-color: rgb(204, 243, 204);
+ transform:scale(1.5);
+ margin-left: 20%;
+ margin-bottom: 10px;
+}
+
+input[type='radio']{
+    width: 50px;
+    transform:scale(1.5);
+
+
+   
+}
+input[type='submit']{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(83, 148, 83);
+    background-color: rgb(204, 243, 204);
+    margin-left:40%;
+    color:blue;
+    font-family: cursive ;
+    text-shadow: 5rem;
+}
+
+
